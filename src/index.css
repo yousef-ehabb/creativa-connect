@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/Fonts/BricolageGrotesque.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #004e9e;
+  --color-primary-dark: #003b78;
+  --color-primary-light: #e6eff8;
+  --color-gold: #f8af43;
+  --color-gold-dark: #e59d30;
+  --color-success: #10b981;
+  --color-success-dark: #047857;
+  --color-charcoal: #222222;
+  --color-body: #616161;
+  --color-hairline: #e5e5e5;
+  --font-primary: 'Bricolage Grotesque', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: radial-gradient(ellipse at 50% -10%, #ffffff 0%, #fafafa 75%);
+  color: #222222;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #004e9e;
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: #e6eff8;
+  color: #004e9e;
+}
